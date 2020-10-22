@@ -1,4 +1,4 @@
-const boardDao = require('../dao/BoardDao');
+const boardDao = require('../dao/boardDao');
 
 module.exports = class BoardService {
     constructor() {

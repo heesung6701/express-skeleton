@@ -1,7 +1,7 @@
 const { Router } = require('express');
-const AuthController = require('./controller/AuthController.js');
-const BoardController = require('./controller/BoardController.js');
-const CommentController = require('./controller/CommentController.js');
+const AuthController = require('./controllers/authController.js');
+const BoardController = require('./controllers/boardController.js');
+const CommentController = require('./controllers/commentController.js');
 
 module.exports = () => {
 	const app = Router();

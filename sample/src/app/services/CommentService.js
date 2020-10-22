@@ -1,5 +1,5 @@
-const commentDao = require('../dao/CommentDao');
-const boardDao = require('../dao/BoardDao');
+const commentDao = require('../dao/commentDao');
+const boardDao = require('../dao/boardDao');
 
 module.exports = class CommentService {
     constructor() {

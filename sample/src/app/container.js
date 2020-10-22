@@ -1,9 +1,9 @@
 const modules = {};
 
 const constructors = {
-    AuthService: require("./services/AuthService"),
-    BoardService: require("./services/BoardService"),
-    CommentService: require('./services/CommentService'),
+    AuthService: require("./services/authService"),
+    BoardService: require("./services/boardService"),
+    CommentService: require('./services/commentService'),
 };
 
 module.exports.get = (name) => {
