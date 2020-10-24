@@ -1,6 +1,5 @@
 const { Router } = require('express');
-const Container = require('../container.js');
-const boardService = Container.get('BoardService');
+const boardService = require('../services/boardService.js')();
 const route = Router();
 
 module.exports = (app) => {

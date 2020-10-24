@@ -1,15 +1,15 @@
-const boardDao = require('../dao/boardDao');
+const defaultBoardDao = require('../dao/boardDao');
 
-module.exports = class BoardService {
-    constructor() {
-    }
+module.exports = (dependencies) => {
+    const {boardDao} = Object.assign({boardDao: defaultBoardDao}, dependencies);
 
-    method1() {
-        boardDao.getAll();
-    }
-
-    method2() {
-        boardDao.getById();
-        boardDao.insert();
-    }
+    return {
+        method1: () => {
+            boardDao.getAll();
+        },
+        method2: () => {
+            boardDao.getById();
+            boardDao.insert();
+        }    
+    };
 }

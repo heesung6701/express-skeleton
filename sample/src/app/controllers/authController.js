@@ -1,6 +1,5 @@
 const { Router } = require('express');
-const Container = require('../container.js');
-const authService = Container.get('AuthService');
+const authService = require('../services/authService.js')();
 const route = Router();
 
 module.exports = (app) => {

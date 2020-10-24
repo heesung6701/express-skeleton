@@ -1,10 +1,9 @@
-module.exports = class Service {
-    constructor() {
-    }
-
-    operation1() {
-    }
-
-    operation2() {
-    }
+module.exports = () =>  {
+    return {
+        operation1: () => {
+        },
+    
+        operation2: () => {
+        }
+    };
 }

@@ -1,6 +1,5 @@
 const { Router } = require('express');
-const Container = require('../container.js');
-const commentService = Container.get('CommentService');
+const commentService = require('../services/CommentService.js')();
 const route = Router({mergeParams: true});
 
 module.exports = (app) => {
